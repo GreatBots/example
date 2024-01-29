@@ -9,19 +9,19 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
-            color: #495057;
+            background: linear-gradient(to right, #2c3e50, #3498db);
+            color: #ecf0f1;
         }
 
         header {
-            background-color: #343a40;
+            background: linear-gradient(to right, #3498db, #2980b9);
             color: #fff;
             text-align: center;
             padding: 2em 0;
         }
 
         h1, h2 {
-            color: #343a40;
+            color: #2c3e50;
         }
 
         section {
@@ -48,12 +48,12 @@
         }
 
         a {
-            color: #007bff;
+            color: #3498db;
             text-decoration: none;
         }
 
         footer {
-            background-color: #343a40;
+            background: linear-gradient(to right, #3498db, #2980b9);
             color: #fff;
             text-align: center;
             padding: 1em 0;
@@ -61,27 +61,48 @@
             bottom: 0;
             width: 100%;
         }
+
+        /* Additional Developer-themed Styling */
+        code {
+            background-color: #34495e;
+            color: #ecf0f1;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+
+        .project-link {
+            color: #e74c3c;
+        }
+
+        /* Image Styling */
+        .profile-img {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
 
     <header>
+        <!-- Replace the URL with your profile image -->
+        <img class="profile-img" src="https://example.com/your-profile-image.jpg" alt="Your Name">
         <h1>Your Name</h1>
-        <p>Developer | Web Enthusiast</p>
+        <p>Developer | Code Enthusiast</p>
     </header>
 
     <section>
         <h2>About Me</h2>
-        <p>Hi, I'm Your Name, a passionate developer with a focus on creating meaningful and efficient solutions. I love exploring new technologies and turning ideas into reality.</p>
+        <p>Hi, I'm Your Name, a passionate <code>developer</code> with a focus on creating meaningful and efficient solutions. I love exploring new technologies and turning ideas into reality.</p>
     </section>
 
     <section>
         <h2>Skills</h2>
         <ul>
-            <li>HTML5, CSS3, JavaScript</li>
-            <li>React, Vue.js</li>
-            <li>Node.js, Express</li>
-            <li>Database: MongoDB, MySQL</li>
+            <li><code>HTML5</code>, <code>CSS3</code>, <code>JavaScript</code></li>
+            <li><code>React</code>, <code>Vue.js</code></li>
+            <li><code>Node.js</code>, <code>Express</code></li>
+            <li>Database: <code>MongoDB</code>, <code>MySQL</code></li>
             <!-- Add more skills as needed -->
         </ul>
     </section>
@@ -89,8 +110,8 @@
     <section>
         <h2>Projects</h2>
         <ul>
-            <li><a href="#">Project 1</a> - Description of Project 1</li>
-            <li><a href="#">Project 2</a> - Description of Project 2</li>
+            <li><a class="project-link" href="#">Project 1</a> - Description of Project 1</li>
+            <li><a class="project-link" href="#">Project 2</a> - Description of Project 2</li>
             <!-- Add more projects as needed -->
         </ul>
     </section>
